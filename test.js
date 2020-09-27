@@ -1,33 +1,18 @@
-var youlikemeat = true;
-var myNum = 10;
+var myAge = 90;
 
-
-if (youlikemeat) {
-  document.write ("you like meat");
+if (myAge > 30) {
+  document.write("you are over 30");
 }
 
- else {
-       
-   document.write("you hate meat");
-
- }
-
-
-/*if (myNum == 10) {
-   document.write ("myNum is equal to 10");
-}
-
-  else {
-        
-    document.write("myNu is not equal to 10")
+else if (myAge > 20) {
+  document.write("your are over 20");
 
   }
 
-/*if (ilikemeat) /*we cheeck if this is true. if true we will execute below code */ {
+else if (myAge > 10) {
+    document.write("your are over 10");
+  }
 
-   /* document.write("this expresion is true"); */
-
-}      /* between curly brackets scode 
-        block that we will execute if this condition is tru*/
-
-       
+else {
+      document.write("your are not over 10");
+  }
