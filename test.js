@@ -1,8 +1,29 @@
-var links = document.getElementsByTagName("a");
 
-for (i = 1; i < links.lenght; i++) {
+for (i = 0; i < 10; i++) {
   
-  console.log("this is link number" + i);
- 
+  if (i === 5 || i === 3) {
+
+    continue;
+  }
+    console.log(i);
+    if ( i === 7) {
+  
+      break;
+  }
+
 }
-   document.write("all links now lopped");
+   console.log("i have broken out of the loop");
+
+
+
+
+/*for (i = 0; i < 10; i++) {
+  
+  console.log(i);
+  if ( i === 7) {
+
+    break;
+  }
+
+}
+   console.log("i have broken out of the loop"); */
