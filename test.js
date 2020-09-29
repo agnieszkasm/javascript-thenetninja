@@ -1,14 +1,23 @@
 
- var  links = document.getElementsByTagName("a");
+function getAverage (a,b, c, d, e, f) {
 
- /* BELOW: we want loop to continue as long as "i" is 
- less than number of links on page will continue to do this 
- so it will catch all links. 
- and we want to  increment i by 1 each time around  */
- 
- for(i = 0; i < links.length; i++){
+  var average = (a + b + c + d + e + f) / 6;
+  console.log(average)
+  return average;
 
-  links[i].className = "link-" + i;
+}
+   var myResult = getAverage(7, 8, 9, 10, 11, 12);
+   console.log ("the average is " + myResult);
 
 
- }
+
+
+   /*
+   function getAverage (a,b) {
+
+    var average = (a + b)/ 2;
+  
+    console.log(average)
+  
+  }
+     getAverage(7, 8); */
