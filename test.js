@@ -1,40 +1,12 @@
+var a = 7;
+var b = 5;
 
-var average = 0; /*  global variable*/
+console.log(a + b);
 
-function getAverage (a,b) {
+console.log(Math.PI);
 
-  average = (a + b) / 2;
-  console.log(average);
-  return average;
+console.log(Math.max(8.1, 4, 9, 8));
 
-}
-   var myResult = getAverage(7, 8);
-  
+console.log(Math.floor(8.6));
 
-function logResult() {
-   console.log ("the average is " + myResult  + " inside the function");
-
-}
-
-logResult ();
-
-/*  
-and here is local variable var average
-
-function getAverage (a,b) {
- 
- var average = (a + b) / 2;  /local variable/
- console.log(average);
- return average;
- 
-}
-  var myResult = getAverage(7, 8);
- 
-function logResult() {
-  console.log ("the average is " + myResult  + " inside the function");
- 
-}
- 
-logResult ();
-
-*/
+console.log(Math.round(8.6));
