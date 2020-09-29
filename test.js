@@ -1,29 +1,14 @@
 
-for (i = 0; i < 10; i++) {
-  
-  if (i === 5 || i === 3) {
+ var  links = document.getElementsByTagName("a");
 
-    continue;
-  }
-    console.log(i);
-    if ( i === 7) {
-  
-      break;
-  }
+ /* BELOW: we want loop to continue as long as "i" is 
+ less than number of links on page will continue to do this 
+ so it will catch all links. 
+ and we want to  increment i by 1 each time around  */
+ 
+ for(i = 0; i < links.length; i++){
 
-}
-   console.log("i have broken out of the loop");
+  links[i].className = "link-" + i;
 
 
-
-
-/*for (i = 0; i < 10; i++) {
-  
-  console.log(i);
-  if ( i === 7) {
-
-    break;
-  }
-
-}
-   console.log("i have broken out of the loop"); */
+ }
