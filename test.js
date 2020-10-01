@@ -1,42 +1,49 @@
+var myArray = new Array ();
+myArray[0] = 8;
+myArray[1] = "hello";
 
-/* comparing string*/
+var myCar = new Object();
+myCar.myspeed = 50;
+myCar.driver = "Aga";
 
- var string1 = "abc";
- var string2 = "ABC";
+console.log(myCar.driver);
 
- console.log(string1.toLowerCase() === string2.toLowerCase());
+myCar.drive = function() {
+    console.log("now driving");};
 
- var string1 = "abc";
- var string2 = "bcd";
-
- console.log(string1 < string2);
- /*This is true as... a is before b in the alphabet... so thats seen less than b.. */
-
-
- var string1 = "abc";
- var string2 = "Bcd";
- console.log(string1 < string2);
- /*This is false.. as... a is before b in the alphabet... so thats seen less than b.. */
+    myCar.drive(); /*tutaj jest nawias bo robimy call funkcji!
+    wywolujemy ją! wyżeej dopiero ją definiujemy / kiedy ją assign!*/
 
 
+/*SHORTHAND VERISON CURLY BRACKETS*/
+var myCar2 = {
+    maxSpeed: 50, 
+    driver: "the Net ninja",
+    drive: function() {
+        console.log("now driving again");
+    }
+};  
 
-/*PREVIOUS EXAMPLES*/
-/*var myString = 'I am a "fun" string'; /*OK*/
-/*var myString = "I am a "fun"string"; this is not correct*/
-/*var myString = 'I\'m a "fun ninja" string';  */
+    console.log(myCar2.maxSpeed);
+    myCar2.drive();
 
-/*if (myString.indexOf("ninja") === -1) { */
- /*ok, i am looking for the word ninja. It is not in the 
- string so it say. OK, I will make it equal to -1
- so the statement is true, so this code is executed.*/
 
-/*
-        console.log("the word ninja is not in the string");
-}
+    var myCar2 = {
+        maxSpeed: 50, 
+        driver: "the Net Ninja",
+        drive: function(speed, time) {
+            console.log(speed * time);
+        }
+    };  
+    
+        console.log(myCar2.maxSpeed);
+        myCar2.drive(50, 3);
+    
 
-else  {
-    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
-}
 
-/*
-console.log (myString.indexOf("string")); */
+
+
+
+
+
+    
