@@ -1,29 +1,24 @@
-    var myCar2 = {
-        
-        maxSpeed: 70, 
-        driver: "Net Ninja",
-        drive: function(speed, time) {
+var Car = function(maxSpeed, driver) {
+
+        this.maxSpeed = maxSpeed;
+        this.driver = driver;
+        this.drive = function(speed, time) {
             console.log(speed * time);
-        },
-      
-        logDriver: function() {
+        };
+        this.logDriver = function() {
             console.log("driver name is " + this.driver);
-
-        }
-        /*UP: this again refers to myCar2. 
-        Jakbys napisala zamiast this myCar2 tez by zadzialalo.
-        Ale w przypadku 10 takich opcji to oszzcednisc czasu*/
-    };  
-
-        myCar2.logDriver();
-        console.log(myCar2.maxSpeed);
-        myCar2.drive(50, 3);
-    
+        };
 
 
+  }
 
+  /*below we have 4 objects and abone one contructor function*/
+  var myCar = new Car(10, "Ninja man");
+  var myCar2 = new Car(60, "A man");
+  var myCar3 = new Car(70, "Aga");
+  var myCar4 = new Car(10000, "DDD");
 
-
-
-
-    
+  myCar.drive(30,5);
+  myCar3.logDriver();
+  myCar4.logDriver();
+  myCar4.drive(33,10);
