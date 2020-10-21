@@ -1,4 +1,4 @@
-body {
+/* body {
     background: #eee;
 }
 
@@ -18,7 +18,7 @@ body {
 
 
 /*set tarnsmitions up*/
--webkit-transition: opacity 0.7s;
+/* -webkit-transition: opacity 0.7s;
 -moz-transition: opacity 0.7s;
 transition: opacity 0.7s;
 
@@ -26,13 +26,13 @@ transition: opacity 0.7s;
 
 #message.show {
     opacity: 1;
-    
+     */
 /*set tarnsmitions up*/
--webkit-transition: opacity 0.7s;
+/* -webkit-transition: opacity 0.7s;
 -moz-transition: opacity 0.7s;
 transition: opacity 0.7s;
 
-}
+} */
 
 /*#show-more {
     background: #1594e5;
@@ -48,7 +48,7 @@ transition: opacity 0.7s;
     cursor: pointer;
 
 }*/
-
+/* 
 #colour-changer {
     width: 200px;
     height: 100px;
@@ -60,4 +60,4 @@ transition: opacity 0.7s;
 -moz-transition: background 0.7s;
 transition: background 0.7s;
 
-}
+} */ 
